@@ -4,10 +4,13 @@ kubernetes secret edit
 
 ## install
 
-```
-$ curl -L https://github.com/RyosukeCla/ksedit/releases/download/latest/ksedit_darwin_amd64 -o /usr/local/bin/ksedit
-```
+```bash
+# linux
+$ curl -L https://github.com/RyosukeCla/ksedit/releases/download/v0.0.1/ksedit_linux_amd64 -o /usr/local/bin/ksedit
 
+# mac
+$ curl -L https://github.com/RyosukeCla/ksedit/releases/download/v0.0.1/ksedit_darwin_amd64 -o /usr/local/bin/ksedit
+```
 
 ## usage
 
@@ -36,17 +39,8 @@ $ ksedit -e ./secret.dec.yml > ./secret.yml
 ## options
 
 ```
-NAME:
-   ksedit - kubernetest secret resource edit
-
 USAGE:
    ksedit [global options] filepath
-
-VERSION:
-   0.0.1
-
-COMMANDS:
-   help, h  Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
    --write, -w     write secret
