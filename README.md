@@ -2,6 +2,13 @@
 
 kubernetes secret edit
 
+## install
+
+```
+$ curl -L https://github.com/RyosukeCla/ksedit/releases/download/latest/ksedit_darwin_amd64 -o /usr/local/bin/ksedit
+```
+
+
 ## usage
 
 pipe or filepath
