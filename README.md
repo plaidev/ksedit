@@ -28,7 +28,7 @@ $ ksedit -e ./secret.dec.yml > ./secret.yml
 
 ## options
 
-```bash
+```
 NAME:
    ksedit - kubernetest secret resource edit
 
