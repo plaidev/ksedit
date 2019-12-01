@@ -1,0 +1,2 @@
+ksedit:
+	go build
