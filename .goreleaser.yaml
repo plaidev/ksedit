@@ -13,5 +13,5 @@ archive:
     - README.md
 release:
   github:
-    owner: RyosukeCLa
+    owner: Plaidev
     name: ksedit
