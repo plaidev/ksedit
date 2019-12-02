@@ -7,9 +7,11 @@ kubernetes secret edit
 ```bash
 # linux
 $ curl -L https://github.com/RyosukeCla/ksedit/releases/download/v0.0.1/ksedit_linux_amd64 -o /usr/local/bin/ksedit
+$ chmod +x /usr/local/bin/kubectl
 
 # mac
 $ curl -L https://github.com/RyosukeCla/ksedit/releases/download/v0.0.1/ksedit_darwin_amd64 -o /usr/local/bin/ksedit
+$ chmod +x /usr/local/bin/kubectl
 ```
 
 ## usage
