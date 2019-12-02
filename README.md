@@ -6,11 +6,11 @@ kubernetes secret edit
 
 ```bash
 # linux
-$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.1/ksedit_linux_amd64 -o /usr/local/bin/ksedit
+$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.2/ksedit_linux_amd64 -o /usr/local/bin/ksedit
 $ chmod +x /usr/local/bin/kubectl
 
 # mac
-$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.1/darwin_linux_amd64 -o /usr/local/bin/ksedit
+$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.2/darwin_linux_amd64 -o /usr/local/bin/ksedit
 $ chmod +x /usr/local/bin/kubectl
 ```
 
@@ -44,11 +44,13 @@ $ ksedit -e ./secret.dec.yml > ./secret.yml
 USAGE:
    ksedit [global options] filepath
 
+ENVS:
+   $EDITOR         (default "vim")
+
 GLOBAL OPTIONS:
    --write, -w     write secret
    --encode, -e    encode secret
    --decode, -d    decode secret
-   --editor value  editor (default: "vim")
    --help, -h      show help
    --version, -v   print the version
 ```
