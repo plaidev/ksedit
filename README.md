@@ -6,11 +6,11 @@ kubernetes secret edit
 
 ```bash
 # linux
-$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.2/ksedit_linux_amd64 -o /usr/local/bin/ksedit
+$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.3/ksedit_linux_amd64 -o /usr/local/bin/ksedit
 $ chmod +x /usr/local/bin/kubectl
 
 # mac
-$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.2/darwin_linux_amd64 -o /usr/local/bin/ksedit
+$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.3/darwin_linux_amd64 -o /usr/local/bin/ksedit
 $ chmod +x /usr/local/bin/kubectl
 ```
 
