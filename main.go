@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/base64"
 	"fmt"
+	tty "github.com/mattn/go-tty"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -54,13 +55,15 @@ func editSecretWithEditor(secret *DecodedSecret, editor string) {
 	tempFile.Close()
 
 	c := exec.Command(editor, tempFile.Name())
-	tty, err := os.Open("/dev/tty")
+
+	tty, err := tty.Open()
 	if err != nil {
 		panic(err)
 	}
 	defer tty.Close()
-	c.Stdin = tty
-	c.Stdout = os.Stdout
+
+	c.Stdin = tty.Input()
+	c.Stdout = tty.Output()
 	c.Stderr = os.Stderr
 	err = c.Run()
 	if err != nil {
