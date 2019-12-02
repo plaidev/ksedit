@@ -120,11 +120,6 @@ func main() {
 			Name:  "decode, d",
 			Usage: "decode secret",
 		},
-		cli.StringFlag{
-			Name:  "editor",
-			Usage: "editor",
-			Value: "vim",
-		},
 	}
 
 	app.Action = func(context *cli.Context) error {
@@ -132,7 +127,10 @@ func main() {
 		writeOpt := context.GlobalBool("write")
 		encodeOpt := context.GlobalBool("encode")
 		decodeOpt := context.GlobalBool("decode")
-		editor := context.GlobalString("editor")
+		editor := os.ExpandEnv("$EDITOR")
+		if editor == "" {
+			editor = "vim"
+		}
 
 		secret := &DecodedSecret{}
 
