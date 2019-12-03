@@ -10,7 +10,7 @@ $ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.5/ksedit_linu
 $ chmod +x /usr/local/bin/kubectl
 
 # mac
-$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.5/darwin_linux_amd64 -o /usr/local/bin/ksedit
+$ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.5/ksedit_darwin_amd64 -o /usr/local/bin/ksedit
 $ chmod +x /usr/local/bin/kubectl
 ```
 
