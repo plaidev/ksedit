@@ -7,11 +7,11 @@ kubernetes secret edit
 ```bash
 # linux
 $ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.5/ksedit_linux_amd64 -o /usr/local/bin/ksedit
-$ chmod +x /usr/local/bin/kubectl
+$ chmod +x /usr/local/bin/ksedit
 
 # mac
 $ curl -L https://github.com/plaidev/ksedit/releases/download/v0.0.5/ksedit_darwin_amd64 -o /usr/local/bin/ksedit
-$ chmod +x /usr/local/bin/kubectl
+$ chmod +x /usr/local/bin/ksedit
 ```
 
 ## usage
@@ -54,4 +54,3 @@ GLOBAL OPTIONS:
    --help, -h      show help
    --version, -v   print the version
 ```
-
